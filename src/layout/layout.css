@@ -1,0 +1,44 @@
+.layout {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "section section aside"
+    "footer footer aside";
+  grid-template-rows: 5% 1fr 5%;
+  grid-template-columns: 1fr 1fr auto;
+  grid-gap: 4px;
+  height: 100vh;
+}
+header {
+  background: white;
+  grid-area: header;
+  border: 1px solid whitesmoke;
+  box-shadow: 5px 15px 8px hsl(0, 5%, 96%);
+}
+
+section {
+  background: white;
+  grid-area: section;
+  border: 1px solid whitesmoke;
+  box-shadow: 5px 15px 8px hsl(0, 5%, 96%);
+}
+
+aside {
+  background: white;
+  grid-area: aside;
+  border: 1px solid whitesmoke;
+  box-shadow: 5px 15px 8px hsl(0, 5%, 96%);
+}
+
+footer {
+  background: white;
+  grid-area: footer;
+  border: 1px solid whitesmoke;
+  box-shadow: 5px 15px 8px hsl(0, 5%, 96%);
+}
+
+/* header section,
+aside,
+footer {
+  padding: 5px;
+} */
